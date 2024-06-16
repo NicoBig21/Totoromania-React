@@ -1,14 +1,15 @@
 import React from 'react';
+import '../styles/components/pages/NosotrosPage.css';
 
 const NosotrosPage = (props) => {
-    return(
-        <main className="container">
-            <section>
+    return (
+        <main className="container mt-5">
+            <section className="mb-5">
                 <div className="container">
                     <h2>Historia de Totoromania</h2>
                     <div className="row">
                         <div className="col-md-6 my-4">
-                            <img src="img/historia.jpg" className="img-fluid img-border" alt="Historia de Totoromania"/>
+                            <img src="/images/historia.jpg" className="img-fluid img-border" alt="Historia de Totoromania" />
                         </div>
                         <div className="col-md-6">
                             <p>Totoromania es más que una marca, es un emprendimiento familiar que ha ido creciendo poco a poco con el amor y la dedicación de generaciones. Desde nuestro modesto inicio en el pintoresco barrio de Villa Urquiza, hemos tejido nuestro camino con pasión y compromiso.</p>
@@ -20,12 +21,12 @@ const NosotrosPage = (props) => {
                 </div>
             </section>
             
-            <section>
+            <section className="mb-5">
                 <h2>Quiénes somos</h2>
-                <div className="row justify-content-center">
+                <div className="row justify-content-center nosotros">
                     <div className="col-md-4">
                         <div className="card card-nosotros">
-                            <img src="img/gerente.jpg" className="card-img-top persona" alt="Persona 1"/>
+                            <img src="/images/gerente.jpg" className="card-img-top persona" alt="Tania Rodriguez"/>
                             <div className="card-body">
                                 <h5 className="card-title">Tania Rodriguez</h5>
                                 <p className="card-text">Gerente General</p>
@@ -34,7 +35,7 @@ const NosotrosPage = (props) => {
                     </div>
                     <div className="col-md-4">
                         <div className="card card-nosotros">
-                            <img src="img/diseñadora.jpg" className="card-img-top persona" alt="Persona 2"/>
+                            <img src="/images/diseñadora.jpg" className="card-img-top persona" alt="María López"/>
                             <div className="card-body">
                                 <h5 className="card-title">María López</h5>
                                 <p className="card-text">Diseñadora Jefe</p>
@@ -43,7 +44,7 @@ const NosotrosPage = (props) => {
                     </div>
                     <div className="col-md-4">
                         <div className="card card-nosotros">
-                            <img src="img/marketing.jpg" className="card-img-top persona" alt="Persona 3"/>
+                            <img src="/images/marketing.jpg" className="card-img-top persona" alt="Carlos Martínez"/>
                             <div className="card-body">
                                 <h5 className="card-title">Carlos Martínez</h5>
                                 <p className="card-text">Encargado de Marketing</p>
@@ -52,7 +53,7 @@ const NosotrosPage = (props) => {
                     </div>
                     <div className="col-md-4">
                         <div className="card card-nosotros">
-                            <img src="img/calidad.jpg" className="card-img-top persona" alt="Persona 4"/>
+                            <img src="/images/calidad.jpg" className="card-img-top persona" alt="Ana Rodríguez"/>
                             <div className="card-body">
                                 <h5 className="card-title">Ana Rodríguez</h5>
                                 <p className="card-text">Especialista en Calidad</p>
@@ -61,7 +62,7 @@ const NosotrosPage = (props) => {
                     </div>
                     <div className="col-md-4">
                         <div className="card card-nosotros">
-                            <img src="img/analista.jpg" className="card-img-top persona" alt="Persona 5"/>
+                            <img src="/images/analista.jpg" className="card-img-top persona" alt="Pedro Gómez"/>
                             <div className="card-body">
                                 <h5 className="card-title">Pedro Gómez</h5>
                                 <p className="card-text">Analista Financiero</p>
@@ -73,11 +74,15 @@ const NosotrosPage = (props) => {
             
             <section>
                 <h2>Dónde encontrarnos</h2>
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.765117693116!2d-58.38380008476901!3d-34.60505536846096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9f35c9a373%3A0x5d73b0d6ed94a29c!2sCalle%20Principal%2C%20N%C3%BAmero%20123%2C%20Ciudad%20Totoro!5e0!3m2!1sen!2sar!4v1642973722490!5m2!1sen!2sar" width="600" height="450" style={{ border: 0 }} allowFullScreen="" loading="lazy"></iframe>
+                <div className="row">
+                    <div className="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.765117693116!2d-58.38380008476901!3d-34.60505536846096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9f35c9a373%3A0x5d73b0d6ed94a29c!2sCalle%20Principal%2C%20N%C3%BAmero%20123%2C%20Ciudad%20Totoro!5e0!3m2!1sen!2sar!4v1642973722490!5m2!1sen!2sar" width="100%" height="450" style={{ border: 0 }} allowFullScreen="" loading="lazy"></iframe>
+                    </div>
+                    <div className="col-md-6">
+                        <p>Nos puedes encontrar en Av. Triunvirato, 2016, en Villa Urquiza, Capital Federal.</p>
+                        <p>Nuestro horario habitual es de lunes a viernes de 9:00 am a 6:00 pm.</p>
+                    </div>
                 </div>
-                <p>Nos puedes encontrar en Av.Triunvirato, 2016, En villa urquiza capital federal.</p>
-                <p>Nuestro horario habitual es de lunes a viernes de 9:00 am a 6:00 pm.</p>
             </section>        
         </main>
     );

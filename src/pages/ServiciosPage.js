@@ -17,7 +17,7 @@ const ServiciosPage = (props) => {
                             <h5 class="card-title">Venta de Ropa Tejida</h5>
                             <p class="card-text">Explora nuestra colección de ropa tejida a mano, desde suéteres hasta bufandas, para mantenerte abrigado y con estilo.</p>
                         </div>
-                        <img src="../../public/images/ropa-tejida.jpg" class="card-img-bottom" alt="Venta de Ropa Tejida"/>
+                        <img src="/images/ropa-tejida.jpg" class="card-img-bottom" alt="Venta de Ropa Tejida"/>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
@@ -26,7 +26,7 @@ const ServiciosPage = (props) => {
                             <h5 class="card-title">Atención al Cliente</h5>
                             <p class="card-text">¿Tienes algún problema con tu pedido? Nuestro equipo de atención al cliente está aquí para ayudarte con cualquier defecto o inconveniente.</p>
                         </div>
-                        <img src="img/atencion-cliente.jpg" class="card-img-bottom" alt="Atención al Cliente"/>
+                        <img src="/images/atencion-cliente.jpg" class="card-img-bottom" alt="Atención al Cliente"/>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
@@ -35,7 +35,7 @@ const ServiciosPage = (props) => {
                             <h5 class="card-title">Productos Personalizados</h5>
                             <p class="card-text">¿Quieres algo único? Ofrecemos productos personalizados, desde juguetes para mascotas hasta regalos especiales hechos a medida.</p>
                         </div>
-                        <img src="img/juguete-personalizado.jpg" class="card-img-bottom" alt="Productos Personalizados"/>
+                        <img src="/images/juguete-personalizado.jpg" class="card-img-bottom" alt="Productos Personalizados"/>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
@@ -44,7 +44,7 @@ const ServiciosPage = (props) => {
                             <h5 class="card-title">Pedidos a Medida</h5>
                             <p class="card-text">Cuéntanos tu idea y nosotros la haremos realidad. Diseñamos y creamos productos a medida según tus especificaciones.</p>
                         </div>
-                        <img src="img/medida.jpg" class="card-img-bottom" alt="Pedidos a Medida"/>
+                        <img src="/images/medida.jpg" class="card-img-bottom" alt="Pedidos a Medida"/>
                     </div>
                 </div>
             </div>

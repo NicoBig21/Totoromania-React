@@ -1,9 +1,6 @@
-/* Navbar */
-
 nav{
     background-color: #d44c61;
     margin-bottom: 20px;
-    display: flex;
 }
 
 nav ul {

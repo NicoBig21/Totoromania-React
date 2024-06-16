@@ -1,0 +1,19 @@
+.header{
+    background-color: #ee7284;
+    padding: 16px 0;
+}
+
+.header div{
+    display: flex;
+    align-items: center
+}
+
+.header h1{
+    color: white;
+    font-style: italic;
+    margin-left: 10px;
+}
+
+.header img{
+    width: 8rem;
+}

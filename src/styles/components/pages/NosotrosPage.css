@@ -1,0 +1,37 @@
+.nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center
+}
+
+/* Historia */
+.img-border {
+    border: 2px solid #000000;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Quiénes somos */
+.card-nosotros {
+    margin-bottom: 20px;
+    border: 2px solid #ee7284;
+    border-radius: 8px;
+}
+
+.card-nosotros .card-title {
+    color: #ee7284;
+}
+
+.card-nosotros .card-text {
+    font-style: italic;
+}
+
+.card-nosotros .persona {
+    border-bottom: 2px solid #ee7284;
+}
+
+/* Dónde encontrarnos */
+.section-title {
+    color: #ee7284;
+    margin-bottom: 20px;
+}

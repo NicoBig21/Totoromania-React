@@ -1,5 +1,20 @@
-import React from 'react';
 import '../styles/components/pages/Galeria.css'; 
+
+import Lista from '../components/Lista'; 
+
+const lista1 = [
+    '/images/local-1.jpeg',
+    '/images/local-2.jpg',
+    '/images/local-3.jpg',
+    '/images/local-4.jpg'
+];
+
+const lista2 = [
+    '/images/ropa-1.webp',
+    '/images/ropa-2.jpg',
+    '/images/ropa-3.webp',
+    '/images/ropa-4.jpg'
+];
 
 const GaleriaPage = (props) => {
     return (
@@ -15,10 +30,7 @@ const GaleriaPage = (props) => {
                     <div>
                         <h3 className="mb-3">Fotos del Local</h3>
                         <div className="galeria">
-                            <img src="/images/local-1.jpeg" alt="Local 1"/>
-                            <img src="/images/local-2.jpg" alt="Local 2"/>
-                            <img src="/images/local-3.jpg" alt="Local 3"/>
-                            <img src="/images/local-4.jpg" alt="Local 4"/>
+                            <Lista elementos={lista1} />
                         </div>
                     </div>
                 </div>
@@ -26,10 +38,7 @@ const GaleriaPage = (props) => {
                     <div>
                         <h3 className="mb-3">Fotos de los Productos</h3>
                         <div className="galeria">
-                            <img src="/images/ropa-1.webp" alt="Ropa 1"/>
-                            <img src="/images/ropa-2.jpg" alt="Ropa 2"/>
-                            <img src="/images/ropa-3.webp" alt="Ropa 3"/>
-                            <img src="/images/ropa-4.jpg" alt="Ropa 4"/>
+                            <Lista elementos={lista2} />
                         </div>
                     </div>
                 </div>

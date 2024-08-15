@@ -1,7 +1,16 @@
 import React from 'react';
 import '../styles/components/pages/NosotrosPage.css';
 
+import { useState } from 'react';
+
 const NosotrosPage = (props) => {
+
+    const [activo, setActivo] = useState(false);
+
+    const toggleActivo = () => {
+        setActivo(!activo);
+    };
+
     return (
         <main className="container mt-5">
             <section className="mb-5">
@@ -16,6 +25,18 @@ const NosotrosPage = (props) => {
                             <p>Nuestros productos son el resultado de esta pasión, destacándose por la calidad excepcional y la artesanía impecable que nos define. Cada pieza de Totoromania cuenta una historia de tradición y excelencia, reflejando nuestro profundo respeto por el arte del tejido y el cuidado del medio ambiente.</p>
                             <p>Después de años de éxito, enfrentamos desafíos que nos llevaron a cerrar nuestras puertas por un tiempo. Sin embargo, hace unos años, decidimos volver a abrir nuestras puertas con renovado entusiasmo y compromiso. Desde entonces, hemos estado experimentando un crecimiento emocionante y estamos emocionados de seguir compartiendo nuestra pasión por los tejidos y la belleza natural con nuestra comunidad.</p>
                             <p>En Totoromania, nos enorgullece ser parte de cada momento especial en la vida de nuestros clientes. Valoramos profundamente nuestras raíces familiares y nos esforzamos por crear productos que reflejen nuestros valores de calidad, artesanía y respeto por el medio ambiente. Esperamos seguir creciendo y compartiendo nuestra historia con todos ustedes.</p>
+                            {activo && (
+                                <>
+                                    <p>En los últimos años, Totoromania ha expandido su alcance, llegando a más personas que buscan productos únicos y sostenibles. Nuestro equipo ha crecido, incorporando a talentosos artesanos que comparten nuestra visión y valores.</p>
+                                    <p>Nuestra misión es seguir innovando y ofreciendo productos que no solo embellezcan los hogares de nuestros clientes, sino que también contribuyan a un mundo más sustentable. Estamos comprometidos con prácticas responsables y con la creación de un impacto positivo en la comunidad.</p>
+                                    <p>Agradecemos profundamente a todos nuestros clientes por su apoyo constante y esperamos seguir formando parte de sus historias por muchos años más. ¡Gracias por confiar en Totoromania!</p>
+                                </>
+                            )}
+                        </div>
+                        <div className='acciones'>
+                            <button onClick={toggleActivo} className='btn-custom'>
+                                {activo ? 'Cerrar historia' : 'Continuar Historia'}
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -76,7 +97,7 @@ const NosotrosPage = (props) => {
                 <h2>Dónde encontrarnos</h2>
                 <div className="row">
                     <div className="col-md-6">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.765117693116!2d-58.38380008476901!3d-34.60505536846096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9f35c9a373%3A0x5d73b0d6ed94a29c!2sCalle%20Principal%2C%20N%C3%BAmero%20123%2C%20Ciudad%20Totoro!5e0!3m2!1sen!2sar!4v1642973722490!5m2!1sen!2sar" width="100%" height="450" style={{ border: 0 }} allowFullScreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.765117693116!2d-58.38380008476901!3d-34.60505536846096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9f35c9a373%3A0x5d73b0d6ed94a29c!2sCalle%20Principal%2C%20N%C3%BAmero%20123%2C%20Ciudad%20Totoro!5e0!3m2!1sen!2sar!4v1642973722490!5m2!1sen!2sar" title="Mapa" width="100%" height="450" style={{ border: 0 }} allowFullScreen="" loading="lazy"></iframe>
                     </div>
                     <div className="col-md-6">
                         <p>Nos puedes encontrar en Av. Triunvirato, 2016, en Villa Urquiza, Capital Federal.</p>

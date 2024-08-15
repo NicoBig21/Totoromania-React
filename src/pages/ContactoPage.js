@@ -31,7 +31,7 @@ const ContactoPage = (props) => {
                                 <textarea className='form-control' id='mensaje' rows='3'></textarea>
                             </div>
                             <div className='acciones'>
-                                <button type='submit' className='btn btn-primary'>Enviar</button>
+                                <button type='submit' className='btn-custom'>Enviar</button>
                             </div>
                             <h2>Otras vías de comunicación</h2>
                             <p>También puede contactarse con nosotros usando los siguientes medios:</p>
